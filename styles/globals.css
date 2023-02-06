@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav {
+    @apply h-16 px-8 flex justify-between items-center border-b-[1.5px] border-b-transparent select-none bg-white dark:bg-gray-900;
+    border-image: linear-gradient(0.25turn, #2d003f, #420021, #150038);
+    border-image-slice: 1;
+  }
+
+  .nav-link {
+    @apply text-xl hover:font-extrabold hover:border-b-2 border-gray-900 dark:border-gray-200 p-px dark:text-white transition-all duration-100 ease-out rounded-md;
+  }
+
+  .nav-link-mobile {
+    @apply block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded;
+  }
+
+  .nav-link.active {
+    @apply border-b-2 font-extrabold;
+  }
+}
