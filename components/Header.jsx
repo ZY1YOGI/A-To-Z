@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsMoon, BsSun, BsList } from "react-icons/bs"
+import { BsMoon, BsSun, BsList, BsSearch } from "react-icons/bs"
 import useDarkMode from "@/hooks/useTheme.hook";
 
 export default function Header() {
@@ -21,15 +21,13 @@ export default function Header() {
           <li><Link className="nav-link" href="#services">Services</Link></li>
           <li><Link className="nav-link" href="#product">Product</Link></li>
           <button className="hover:bg-gray-800 dark:text-white hover:text-white transition duration-150 ease-out p-3 rounded-lg" onClick={() => console.log("Search")}>
-            <svg className="ease-in duration-100" width="16px" height="16px" fill="currentColor" viewBox="0 0 16 16" >
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
+            <BsSearch size={20}/>
           </button>
           <button onClick={() => colorTheme === "dark" ? setTheme("light") : setTheme("dark")} className="hover:bg-gray-600 hover:text-white dark:text-white hover:dark:bg-slate-700 p-1 rounded-xl">
-            {colorTheme === "light" ? <BsMoon  size={30}  /> : <BsSun  size={30} />}
+            {colorTheme === "light" ? <BsMoon size={25} /> : <BsSun size={25} />}
           </button>
         </ul>
-        <button onClick={()=> setMenu(!menu) } className="max-sm:block hidden">
+        <button onClick={() => setMenu(!menu)} className="max-sm:block hidden">
           <BsList size={30} />
         </button>
         <button className="py-2 px-6 bg-black text-white dark:text-black dark:bg-white  hover:bg-gray-800 text-sm font-bold  rounded-xl transition duration-200">
@@ -51,7 +49,7 @@ export default function Header() {
             </button>
           </div>
           <button onClick={() => colorTheme === "dark" ? setTheme("light") : setTheme("dark")} className="hover:bg-gray-600 hover:text-white dark:text-white hover:dark:bg-slate-700 p-1 rounded-xl">
-            {colorTheme === "light" ? <BsMoon  size={30}  /> : <BsSun  size={30} />}
+            {colorTheme === "light" ? <BsMoon size={25} /> : <BsSun size={25} />}
           </button>
           <div>
             <ul>
