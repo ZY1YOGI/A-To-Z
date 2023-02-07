@@ -131,12 +131,12 @@ const SOCIALLINKS = [
 
 export default function Footer() {
   return (
-    <footer aria-label="Site Footer" className="bg-gray-50/80 dark:bg-gray-900">
+    <footer aria-label="Site Footer" className="bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 pt-16 pb-6 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-center lg:justify-between">
-          <div className="flex justify-center text-teal-600 dark:text-teal-300 sm:justify-start items-center" >
+          <div className="flex justify-center sm:justify-start items-center" >
             <Image className="nav-logo" src={logo} alt="logo web site" width="auto" height="auto" priority />
-            <h1 className="text-3xl">A-Z</h1>
+            <h1 className="text-3xl text-fuchsia-800">A-Z</h1>
           </div>
           <p className="mx-auto mt-4 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400 sm:ml-0 sm:text-left lg:mr-0 lg:mt-0">
             The company "A-To-Z" everything related to software and hardware. We care about serving our valued customers. We offer the best after-sales
@@ -155,7 +155,7 @@ export default function Footer() {
                 <ul className="space-y-4 text-sm">
                   {nav.links.map((navLinks, index) => (
                     <li key={index}>
-                      <a className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75" href={navLinks.href} >
+                      <a href={navLinks.href} className="text-gray-700 dark:text-white transition hover:font-bold hover:text-fuchsia-900 dark:hover:text-white" >
                         {navLinks.name}
                       </a>
                     </li>

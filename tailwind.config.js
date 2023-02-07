@@ -10,7 +10,12 @@ module.exports = {
     // "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      body: {
+        light: "#E4E9F7",
+        dark: "#18191A",
+      },
+    },
   },
   plugins: [],
 };

@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
           <title>Home</title>
       </Head>
-      <main className="h-screen " >
+      <main className="h-screen" >
         
       </main>
     </>
