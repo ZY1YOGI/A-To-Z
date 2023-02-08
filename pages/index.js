@@ -1,5 +1,5 @@
+import Clients from '@/components/Clients';
 import Head from 'next/head'
-
 export default function Home() {
 
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       </Head>
       <main className="h-screen">
           <h1 className="dark:text-white text-5xl">lorem5</h1>
+          <Clients />
       </main>
     </>
   );

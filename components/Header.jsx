@@ -13,30 +13,8 @@ export default function Header() {
   const [colorTheme, setTheme] = useDarkMode();
 
   useEffect(() => {
-    
-    anime.timeline({
-      autoplay: true, delay: 50
-    }).add({
-      targets: '.nav-logo',
-      translateY: [-50, 0],
-      opacity: [0, 1],
-      elasticity: 600,
-      duration: 1500
-    });
-
-    anime.timeline({ autoplay: true, delay: 50 }).add({
-      targets: ".nav-links",
-      translateY: [-50, 0],
-      translateX: [-50, 0],
-    });
-
-    anime.timeline({ delay: 50 }).add({
-      targets: ".nav-links-mobile",
-      translateY: [-50, 0],
-      translateX: [-50, 0]
-    });
-
-  }, [menu]);
+    AOS.init();
+  }, []);
 
   return (
     <header className="min-w-screen max-h-[6vh]">

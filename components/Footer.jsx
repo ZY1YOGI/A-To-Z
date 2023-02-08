@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from 'react'
 import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble } from "react-icons/bs"
 import logo from "@/public/logo.png";
 
