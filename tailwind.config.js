@@ -11,11 +11,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      color: {
+      colors: {
         body: {
           light: "#E4E9F7",
-          dark: "#18191A",
+          dark: "#0e1422",
         },
+
       },
     },
   },
