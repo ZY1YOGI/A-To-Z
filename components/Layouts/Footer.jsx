@@ -127,15 +127,14 @@ const SOCIALLINKS = [
   }
 ]
 
-
 export default function Footer() {
   return (
-    <footer aria-label="Site Footer" className="bg-gray-50 dark:bg-gray-900">
+    <footer aria-label="Site Footer" className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <div className="container mx-auto px-4 pt-16 pb-6 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex justify-center sm:justify-start items-center" >
-            <Image className="nav-logo" src={logo} alt="logo web site" width="auto" height="auto" priority />
-            <h1 className="text-3xl text-fuchsia-800">A-Z</h1>
+            <Image className="nav-logo" src={logo} alt="logo web site" width="auto" height="auto" priority data-aos="fade-left"/>
+            <h1 className="text-3xl text-fuchsia-800" data-aos="fade-right">A-Z</h1>
           </div>
           <p className="mx-auto mt-4 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400 sm:ml-0 sm:text-left lg:mr-0 lg:mt-0">
             The company "A-To-Z" everything related to software and hardware. We care about serving our valued customers. We offer the best after-sales
@@ -153,7 +152,7 @@ export default function Footer() {
               <nav aria-label="Footer Services Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   {nav.links.map((navLinks, index) => (
-                    <li key={index}>
+                    <li data-aos={`fade-${['left', 'right'][Math.floor(Math.random()*['left', 'right'].length)]}`} data-aos-delay={Math.floor(Math.random() * 800) + 100}  key={index}>
                       <a href={navLinks.href} className="text-gray-700 dark:text-white transition hover:font-bold hover:text-fuchsia-900 dark:hover:text-white" >
                         {navLinks.name}
                       </a>
