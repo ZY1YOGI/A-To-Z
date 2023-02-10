@@ -4,14 +4,14 @@
 
 @layer components {
   .navbar {
-    @apply h-[6vh] px-8 flex justify-between items-center border-b-[2.5px] border-b-transparent dark:bg-gray-900  bg-gray-50/30 select-none;
+    @apply max-h-[8vh] px-8 flex justify-between items-center border-b-[2.5px] border-b-transparent dark:bg-gray-900  bg-gray-50/30 select-none overflow-x-hidden;
     border-image: linear-gradient(0.25turn, #2d003f, #420021, #150038);
     border-image-slice: 1;
     box-shadow: 0 0 0.5rem #6f12e962;
   }
 
   .nav-logo {
-    @apply w-10;
+    @apply w-10 dark:invert-[100%];
   }
 
   .nav-links {
@@ -39,13 +39,35 @@
   }
 
   .nav-link-mobile {
-    @apply block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded;
+    @apply block p-4 text-sm font-semibold dark:text-white hover:bg-blue-50 hover:text-blue-600 rounded;
   }
 
   #clients img {
     @apply max-w-[45%] inline-block py-4 grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300;
   }
+  #card {
+    @apply hover:-translate-y-6 hover:delay-[50ms] ease-in-out;
 
+  }
+  #card:hover {
+    transition-delay: 0;
+  }
+}
+
+
+
+#hero img {
+  animation: up-down 1.9s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 

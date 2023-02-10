@@ -30,7 +30,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="min-w-screen max-h-[6vh]">
+    <header className="min-w-screen max-h-[8vh]">
       <nav className="navbar">
         <div className="flex justify-center items-center space-x-3" data-aos="zoom-out">
           <Image className="nav-logo" src={logo} alt="logo web site" width="auto" height="auto" priority />
@@ -51,7 +51,7 @@ export default function Header() {
         <button onClick={() => setMenu(!menu)} className="max-sm:block hidden" data-aos="fade-down">
           <BsList size={30} className="dark:text-white" />
         </button>
-        <button className="btn-auth"data-aos="fade-left">
+        <button className="btn-auth" data-aos="fade-left">
           Auth
         </button>
       </nav>
@@ -59,9 +59,9 @@ export default function Header() {
       {menu && (
         <div className="navbar-mobile">
           <div onClick={() => setMenu(!menu)} className="fixed inset-0 bg-gray-800 opacity-25"></div>
-          <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:bg-gray-900 border-r">
+          <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:bg-gray-900 border-r border-fuchsia-800">
             <div className="flex items-center mb-8">
-              <Image src={logo} className="mr-auto leading-none" alt="logo web site" width="35" height="35" priority />
+              <Image src={logo} className="mr-auto dark:invert-[100%]" alt="logo web site" width="35" height="35" priority />
               <button onClick={() => setMenu(!menu)} className="navbar-close">
                 <BsXLg className="dark:text-white" />
               </button>

@@ -129,7 +129,7 @@ const SOCIALLINKS = [
 
 export default function Footer() {
   return (
-    <footer aria-label="Site Footer" className="bg-gray-50 dark:bg-gray-900 overflow-hidden">
+    <footer className="bg-gray-50 dark:bg-gray-900 w-full overflow-x-hidden">
       <div className="container mx-auto px-4 pt-16 pb-6 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex justify-center sm:justify-start items-center" >
@@ -149,7 +149,7 @@ export default function Footer() {
               <p className="text-lg font-medium text-gray-900 dark:text-white" >
                 {nav.title}
               </p>
-              <nav aria-label="Footer Services Nav" className="mt-8">
+              <nav className="mt-8">
                 <ul className="space-y-4 text-sm">
                   {nav.links.map((navLinks, index) => (
                     <li data-aos={`fade-${['left', 'right'][Math.floor(Math.random()*['left', 'right'].length)]}`} data-aos-delay={Math.floor(Math.random() * 800) + 100}  key={index}>

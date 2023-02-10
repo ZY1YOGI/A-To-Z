@@ -1,15 +1,19 @@
-import Clients from '@/components/Clients';
-import Head from 'next/head'
+import About from "@/components/About";
+import Clients from "@/components/Clients";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Head from "next/head";
 export default function Home() {
-
   return (
     <>
       <Head>
-          <title>Home</title>
+        <title>Home</title>
       </Head>
-      <main className="h-screen">
-          <Clients />
-      </main>
+
+      <Hero />
+      <Clients />
+      <Services />
+      <About />
     </>
   );
 }
