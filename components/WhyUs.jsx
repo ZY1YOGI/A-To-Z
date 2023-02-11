@@ -7,7 +7,7 @@ function Accordion({ title, content, id }) {
   return (
     <div className="outline outline-2 outline-offset-4 outline-red-700 my-8 max-md:my-7 rounded-xl shadow-sm cursor-pointer bg-white dark:bg-gray-200" onClick={toggleExpanded}>
       <div className="px-6 text-left items-center h-16 max-md:h-14 select-none flex justify-between flex-row">
-        <h5 className="flex-1 font-bold overflow-hidden" data-aos="fade-left" data-aos-delay="350"><span className="text-blue-400">{id}</span> {title}</h5>
+        <h5 className="flex-1 font-bold overflow-hidden" data-aos="fade-up" data-aos-delay="350"><span className="text-blue-400">{id}</span> {title}</h5>
         <div className="flex-none pl-2">{expanded ? <BsFillArrowUpCircleFill size={20} /> : <BsFillArrowDownCircleFill size={20} />}</div>
       </div>
       <div className={`px-6 pt-0 overflow-hidden transition-[max-height] duration-500 ease-in ${expanded ? "max-h-40" : "max-h-0"}`}>
