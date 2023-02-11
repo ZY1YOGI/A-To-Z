@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>HomeIng</title>
+        <title>Home</title>
       </Head>
 
       <Hero />
