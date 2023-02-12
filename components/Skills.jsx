@@ -61,7 +61,7 @@ export default function Skills() {
       <div className="mx-20 max-md:mx-3 flex justify-center items-center max-lg:flex-col space-x-8 max-md:space-x-0 max-md:space-y-5">
 
         <div className="flex justify-center xl:w-[60%] min-lg:w-[20%]">
-          <img src="skills.png" className="h-auto w-auto" />
+          <img src="skills.png" className="h-auto w-auto rounded-2xl" />
         </div>
 
         <div className="m-16">
