@@ -5,7 +5,7 @@ import { MdMarkEmailRead } from "react-icons/md"
 function Index() {
   return (
     <div className="container mx-auto pt-16 my-6 max-md:my-4">
-      <div className="lg:flex border-x-[5px] border-fuchsia-600 dark:border-red-600">
+      <div className="lg:flex border-x-[5px] border-red-600 dark:border-fuchsia-600">
         <div className="xl:w-2/5 lg:w-2/5 bg-indigo-700 dark:bg-gray-800 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
           <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
             <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold decoration-slice underline underline-offset-[5px] decoration-red-600" data-aos="fade-up" data-aos-delay="200">Connect with us</h1>
