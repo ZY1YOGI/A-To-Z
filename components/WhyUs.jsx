@@ -21,7 +21,7 @@ function Accordion({ title, content, id }) {
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="my-20 bg-white dark:bg-gray-800  border-x-[5px] border-red-600">
+    <section id="why-us" className="my-20 bg-white dark:bg-gray-800  border-x-[5px] border-red-600 dark:border-fuchsia-600">
       <div className="mx-20 max-md:mx-3 flex justify-center items-center max-md:flex-col space-x-8 max-md:space-x-0 max-md:space-y-5">
 
         <div className="max-md:order-2">
