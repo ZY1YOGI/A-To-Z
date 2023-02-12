@@ -1,7 +1,7 @@
 import React from "react";
 function Index() {
     return (
-        <div className="container mx-auto pt-16">
+        <div className="container mx-auto pt-16 my-6 max-md:my-4">
             <div className="lg:flex">
                 <div className="xl:w-2/5 lg:w-2/5 bg-indigo-700 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
                     <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
@@ -32,7 +32,7 @@ function Index() {
                             545, Street 11, Block F <br />
                             Dean Boulevard, Ohio
                         </p>
-                        <a href="javascript:void(0)">
+                        <a href="#">
                             <p className="text-white pt-16 font-bold tracking-wide underline">View Job Openings</p>
                         </a>
                     </div>
@@ -46,7 +46,7 @@ function Index() {
                                     <label htmlFor="full_name" className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">
                                         Full Name
                                     </label>
-                                    <input required id="full_name" name="full_name" type="text" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder />
+                                    <input required id="full_name" name="full_name" type="text" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Full Name" />
                                 </div>
                             </div>
                             <div className="w-2/4 max-w-xs xl:flex xl:justify-end">
@@ -54,7 +54,7 @@ function Index() {
                                     <label htmlFor="email" className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">
                                         Email
                                     </label>
-                                    <input required id="email" name="email" type="email" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder />
+                                    <input required id="email" name="email" type="email" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Email" />
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ function Index() {
                                     <label htmlFor="phone" className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">
                                         Phone
                                     </label>
-                                    <input required id="phone" name="phone" type="tel" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder />
+                                    <input required id="phone" name="phone" type="tel" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Phone" />
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ function Index() {
                                 <label className="text-sm font-semibold text-gray-800 mb-2" htmlFor="message">
                                     Message
                                 </label>
-                                <textarea placeholder name="message" className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-indigo-700" rows={8} id="message" defaultValue={""} />
+                                <textarea placeholder="Message" name="message" className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-indigo-700" rows={8} id="message" defaultValue={""} />
                             </div>
                             <button type="submit" className="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6">
                                 Submit

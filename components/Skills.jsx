@@ -57,7 +57,7 @@ const SKILLS = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="my-24 py-5 bg-white dark:bg-body-dark border-x-[5px] border-fuchsia-600 dark:border-red-600">
+    <section id="skills" className="my-6 max-md:my-0 py-5 bg-white dark:bg-body-dark border-x-[5px] border-fuchsia-600 dark:border-red-600">
       <div className="mx-20 max-md:mx-3 flex justify-center items-center max-lg:flex-col space-x-8 max-md:space-x-0 max-md:space-y-5">
 
         <div className="flex justify-center xl:w-[60%] min-lg:w-[20%]">

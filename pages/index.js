@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import WhyUs from "@/components/WhyUs";
+import Contact from "@/components/Contact";
 import Head from "next/head";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <WhyUs />
       <Skills />
+      <Contact />
     </>
   );
 }
