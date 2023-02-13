@@ -2,7 +2,7 @@ import React from "react";
 import { FiPhoneCall } from "react-icons/fi"
 import { MdMarkEmailRead } from "react-icons/md"
 
-function Index() {
+export default function Contact() {
   return (
     <div className="container mx-auto pt-16 my-6 max-md:my-4">
       <div className="lg:flex border-x-[5px] border-red-600 dark:border-fuchsia-600">
@@ -77,5 +77,3 @@ function Index() {
     </div>
   );
 }
-
-export default Index;
