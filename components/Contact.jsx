@@ -6,20 +6,20 @@ export default function Contact() {
   return (
     <div className="container mx-auto pt-16 my-6 max-md:my-4">
       <div className="lg:flex border-x-[5px] border-red-600 dark:border-fuchsia-600">
-        <div className="xl:w-2/5 lg:w-2/5 bg-indigo-700 dark:bg-gray-800 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
+        <div className="xl:w-2/5 lg:w-2/5 bg-black dark:bg-gray-800 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
           <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
             <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold decoration-slice underline underline-offset-[5px] decoration-red-600" data-aos="fade-up" data-aos-delay="200">Connect with us</h1>
             <p className="text-xl text-gray-200 pb-8 leading-relaxed font-normal lg:pr-4" data-aos="fade-up" data-aos-delay="150">We are an A-To-Z company. We always offer the best with our customers. We are always interested in customer support. You can communicate or give some suggestions.</p>
             <div className="flex pb-4 items-center">
               <div>
-                <FiPhoneCall />
+                <FiPhoneCall className="text-white" size={20}/>
               </div>
               <p className="pl-4 text-white text-base" data-aos="fade-left" data-aos-delay="200">+20 100 10 268 04</p>
               <p className="pl-4 text-white text-base" data-aos="fade-right" data-aos-delay="200">+20 111 57 567 19</p>
             </div>
             <div className="flex items-center">
               <div>
-                <MdMarkEmailRead />
+                <MdMarkEmailRead className="text-white" size={20}/>
               </div>
               <p className="pl-4 text-white text-base" data-aos="fade-down" data-aos-delay="200">A-TO-Z@Gmail.com</p>
             </div>

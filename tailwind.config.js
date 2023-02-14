@@ -5,9 +5,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-
-    // Or if using `src` directory:
-    // "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -16,7 +13,9 @@ module.exports = {
           light: "#E4E9F7",
           dark: "#0e1422",
         },
-
+      },
+      fontFamily: {
+        Poppins: ["Poppins, sans-serif"],
       },
     },
   },

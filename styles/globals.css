@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: 'Poppins', sans-serif;
+}
 @layer components {
   .navbar {
     @apply max-h-[8vh] px-8 flex justify-between items-center border-b-[2.5px] border-b-transparent dark:bg-gray-900  bg-gray-50/30 select-none overflow-x-hidden;
