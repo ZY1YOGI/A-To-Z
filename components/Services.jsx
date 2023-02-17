@@ -34,7 +34,7 @@ export default function Services() {
           <div className="bg-gray-50 dark:bg-gray-800 shadow-md shadow-fuchsia-700 p-5 rounded-xl border border-fuchsia-600" data-aos="fade-left" data-aos-delay="400">
             <RiUserSettingsLine size={28} />
             <h1 className="text-xl dark:text-white">Maintenance</h1>
-            <p className="text-gray-700 dark:text-gray-300">Immediate maintenance for all faults, whether they are software or hardware</p>
+            <p className="text-gray-700 dark:text-gray-300">Immediate maintenance for all faults, whether they are software or hardware or App</p>
           </div>
         </div>
 

@@ -37,10 +37,10 @@ export default function Header() {
           <h1 className="text-3xl font-bold text-fuchsia-800 dark:text-white max-sm:hidden">A-Z</h1>
         </div>
         <ul className="nav-links" data-aos="zoom-in">
-          <li data-aos="fade-down"><Link className="nav-link" href="#hero">Home</Link></li>
+          <li data-aos="fade-down"><Link className="nav-link" href="../#hero">Home</Link></li>
           <li data-aos="fade-down"><Link className="nav-link" href="#about">About</Link></li>
           <li data-aos="fade-down"><Link className="nav-link" href="#services">Services</Link></li>
-          <li data-aos="fade-down"><Link className="nav-link" href="/product">Product</Link></li>
+          <li data-aos="fade-down"><Link className="nav-link" href="/categories">Categories</Link></li>
           <button className="hover:bg-gray-800 dark:text-white hover:text-white transition duration-150 ease-out p-3 rounded-lg" onClick={() => console.log("Search")}>
             <BsSearch size="20" />
           </button>
@@ -74,7 +74,7 @@ export default function Header() {
                 <li data-aos="fade-left" data-aos-delay="100" ><Link className="nav-link-mobile" href="#hero">Home</Link></li>
                 <li data-aos="fade-right" data-aos-delay="150"><Link className="nav-link-mobile" href="#about">About</Link></li>
                 <li data-aos="fade-left" data-aos-delay="200"><Link className="nav-link-mobile" href="#services">Services</Link></li>
-                <li data-aos="fade-right" data-aos-delay="250"><Link className="nav-link-mobile" href="/product">Product</Link></li>
+                <li data-aos="fade-right" data-aos-delay="250"><Link className="nav-link-mobile" href="/categories">Categories</Link></li>
               </ul>
             </div>
             <div className="mt-auto">
