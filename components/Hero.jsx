@@ -1,5 +1,7 @@
 import React from 'react'
 import { BsFillPlayFill } from "react-icons/bs"
+const logo = require("@/public/logo.png")
+
 
 export default function Hero() {
   return (
@@ -14,7 +16,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex justify-center items-center mt-0">
-          <img src="logo.png" className="max-sm:w-3/5 dark:invert-[90%]" alt="" />
+          <img src={logo} className="max-sm:w-3/5 dark:invert-[90%]" alt="" />
         </div>
       </div>
     </section>

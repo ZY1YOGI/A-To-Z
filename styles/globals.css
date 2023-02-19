@@ -9,7 +9,7 @@ html {
 }
 @layer components {
   .navbar {
-    @apply max-h-[8vh] px-8 flex justify-between items-center border-b-[2.5px] border-b-transparent dark:bg-gray-900  bg-gray-50/30 select-none;
+    @apply max-h-[8vh] px-8 flex justify-between items-center border-b-[2.5px] border-b-transparent dark:bg-gray-900 bg-gray-50/30 select-none;
     border-image: linear-gradient(0.25turn, #2d003f, #420021, #150038);
     border-image-slice: 1;
     box-shadow: 0 0 0.5rem #6f12e962;
@@ -76,9 +76,6 @@ html {
 .btn-blue:hover {
   @apply bg-blue-700;
 }
-
-
-
 
 
 

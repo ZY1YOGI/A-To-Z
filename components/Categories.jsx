@@ -8,25 +8,25 @@ const CATEGORIES = [
     name: "SoftWare",
     info: " paragraph. A paragraph is defined as “a group of sentences or a single sentence that.",
     img: require("@/public/categories/1.png"),
-
+    to: "categories/software",
   },
   {
     name: "HardWare",
     info: " paragraph. A paragraph is defined as “a group of sentences or a single sentence that.",
     img: require("@/public/categories/2.png"),
-
+    to: "categories/hardware",
   },
   {
     name: "PC",
     info: " paragraph. A paragraph is defined as “a group of sentences or a single sentence that.",
     img: require("@/public/categories/3.png"),
-
+    to: "categories/pc",
   },
   {
     name: "XPrinter",
     info: " paragraph. A paragraph is defined as “a group of sentences or a single sentence that.",
     img: require("@/public/categories/4.png"),
-
+    to: "categories/x-printer",
   },
 ]
 
@@ -44,7 +44,7 @@ export default function Categories() {
               <div className="text-center">
                 <h2 className="text-2xl dark:text-white font-bold hover:tracking-widest transition-all cursor-pointer">{"<"} {category.name} {">"}</h2>
                 <p className="dark:text-gray-300 px-5">{category.info}</p>
-                <a href="/" type="button" className="outline outline-2 outline-offset-4 outline-red-700 my-5 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Show More..</a>
+                <a href={category.to} type="button" className="outline outline-2 outline-offset-4 outline-red-700 my-5 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Show More..</a>
               </div>
             </div>
           ))
