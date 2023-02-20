@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 import WhyUs from "@/components/WhyUs";
 import Contact from "@/components/Contact";
 import Head from "next/head";
-
+import Categories from "@/components/Categories"
 export default function Home() {
   return (
     <>
@@ -19,6 +19,7 @@ export default function Home() {
       <Services />
       <About />
       <WhyUs />
+      <Categories />
       <Skills />
       <Contact />
     </>

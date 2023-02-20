@@ -41,12 +41,12 @@ export default function Header() {
           <li data-aos="fade-down"><Link className="nav-link" href="#about">About</Link></li>
           <li data-aos="fade-down"><Link className="nav-link" href="#services">Services</Link></li>
           <div className="relative inline-block group">
-          <li data-aos="fade-down"><Link className="nav-link" href="/categories">Categories</Link></li>
+          <li data-aos="fade-down"><Link className="nav-link" href="http://localhost:3000/#categories">Categories</Link></li>
             <ul className="absolute hidden px-2 py-3 text-white bg-gray-900 rounded-lg dark:text-gray-700 top-8 left-7 group-hover:block outline outline-1 outline-offset-1 outline-red-700">
-              <li><Link className="block nav-link" href="/categories/software">SoftWare</Link></li>
-              <li><Link className="block nav-link" href="/categories/hardware">HardWare</Link></li>
-              <li><Link className="block nav-link" href="/categories/pc">PC</Link></li>
-              <li><Link className="block nav-link" href="/categories/printer">XPrinter</Link></li>
+              <li><Link className="block nav-link" href="/category/software">SoftWare</Link></li>
+              <li><Link className="block nav-link" href="/category/hardware">HardWare</Link></li>
+              <li><Link className="block nav-link" href="/category/pc">PC</Link></li>
+              <li><Link className="block nav-link" href="/category/printer">XPrinter</Link></li>
             </ul>
           </div>
           <button className="p-3 transition duration-150 ease-out rounded-lg hover:bg-gray-800 dark:text-white hover:text-white" onClick={() => console.log("Search")}>
@@ -82,7 +82,7 @@ export default function Header() {
                 <li data-aos="fade-left" data-aos-delay="100" ><Link className="nav-link-mobile" href="#hero">Home</Link></li>
                 <li data-aos="fade-right" data-aos-delay="150"><Link className="nav-link-mobile" href="#about">About</Link></li>
                 <li data-aos="fade-left" data-aos-delay="200"><Link className="nav-link-mobile" href="#services">Services</Link></li>
-                <li data-aos="fade-right" data-aos-delay="250"><Link className="nav-link-mobile" href="/categories">Categories</Link></li>
+                <li data-aos="fade-right" data-aos-delay="250"><Link className="nav-link-mobile" href="#categories">Categories</Link></li>
               </ul>
             </div>
             <div className="mt-auto">

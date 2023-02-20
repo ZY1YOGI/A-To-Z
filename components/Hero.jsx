@@ -1,8 +1,6 @@
-import React from 'react'
-import Image from "next/Image"
+import React from 'react';
+import Image from "next/image";
 import { BsFillPlayFill } from "react-icons/bs"
-const logo = require("@/public/logo.png")
-
 
 export default function Hero() {
   return (
@@ -17,7 +15,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex items-center justify-center mt-0">
-          <Image src={logo} className="max-sm:w-3/5 dark:invert-[90%]" alt="" />
+          <Image src={require("@/public/logo.png")} className="max-sm:w-3/5 dark:invert-[90%]" alt="" />
         </div>
       </div>
     </section>
