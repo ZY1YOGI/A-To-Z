@@ -11,7 +11,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       category: {
-        name: "NAME",
+        name: context.query["category"],
         products:PRODUCTS.products
       },
     },

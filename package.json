@@ -1,6 +1,6 @@
 {
   "name": "front-v2",
-  "version": "5.8.2",
+  "version": "7.9.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
