@@ -6,16 +6,16 @@ export default function Contact() {
   return (
 <section id="contact" className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] select-none">
     <div className="container mx-auto">
-        <div className="-mx-4 flex flex-wrap lg:justify-between">
+        <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
                 <div className="mb-12 max-w-[570px] lg:mb-0 max-sm:mx-3">
-                    <span className="text-primary mb-4 block text-base font-semibold" data-aos="fade-right">
+                    <span className="block mb-4 text-base font-semibold text-primary" data-aos="fade-right">
                         Contact Us
                     </span>
                     <h2 className="text-dark mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]" data-aos="fade-up">
                         GET IN TOUCH WITH US
                     </h2>
-                    <p className="text-body-color mb-9 text-base leading-relaxed" data-aos="fade-down">
+                    <p className="text-base leading-relaxed text-body-color mb-9" data-aos="fade-down">
                         مرحبا نحن شركه للانشاء اي برنامج سوفت وير هارد وير اي حاجه احنا معاك فيه حضرتك اهم حاجه عندنا راحه فخاد حضرتك ف هل انت مبسوط ؟
                     </p>
                     <div className="mb-8 flex w-full max-w-[370px]">
@@ -27,8 +27,8 @@ export default function Contact() {
                             </svg>
                         </div>
                         <div className="w-full">
-                            <h4 className="text-dark mb-1 text-xl font-bold">Our Location</h4>
-                            <p className="text-body-color text-base">
+                            <h4 className="mb-1 text-xl font-bold text-dark">Our Location</h4>
+                            <p className="text-base text-body-color">
                                 6 شارع السلام مطاريه معتمديه
                             </p>
                         </div>
@@ -46,8 +46,8 @@ export default function Contact() {
                             </svg>
                         </div>
                         <div className="w-full">
-                            <h4 className="text-dark mb-1 text-xl font-bold">Phone Number</h4>
-                            <p className="text-body-color text-base">(+20)0100000000</p>
+                            <h4 className="mb-1 text-xl font-bold text-dark">Phone Number</h4>
+                            <p className="text-base text-body-color">(+20)0100000000</p>
                         </div>
                     </div>
                     <div className="mb-8 flex w-full max-w-[370px]">
@@ -59,14 +59,14 @@ export default function Contact() {
                             </svg>
                         </div>
                         <div className="w-full">
-                            <h4 className="text-dark mb-1 text-xl font-bold">Email Address</h4>
-                            <p className="text-body-color text-base">A-To-Z@Gmail.com</p>
+                            <h4 className="mb-1 text-xl font-bold text-dark">Email Address</h4>
+                            <p className="text-base text-body-color">A-To-Z@Gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-                <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
+                <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                     <form>
                         <div className="mb-6">
                             <input type="text" placeholder="Your Name"
@@ -85,7 +85,7 @@ export default function Contact() {
                                 className="text-body-color border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"></textarea>
                         </div>
                         <div>
-                            <button type="submit" className="bg-blue-500 border-primary w-full rounded border p-3 text-white transition hover:bg-opacity-90">
+                            <button type="submit" className="w-full p-3 text-white transition bg-blue-500 border rounded border-primary hover:bg-opacity-90">
                                 Send Message
                             </button>
                         </div>

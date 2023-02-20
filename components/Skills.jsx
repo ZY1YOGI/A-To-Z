@@ -58,10 +58,10 @@ const SKILLS = [
 export default function Skills() {
   return (
     <section id="skills" className="my-6 max-md:my-0 py-5 bg-white dark:bg-body-dark border-x-[5px] border-fuchsia-600 dark:border-red-600">
-      <div className="mx-20 max-md:mx-3 flex justify-center items-center max-lg:flex-col space-x-8 max-md:space-x-0 max-md:space-y-5">
+      <div className="flex items-center justify-center mx-20 space-x-8 max-md:mx-3 max-lg:flex-col max-md:space-x-0 max-md:space-y-5">
 
         <div className="flex justify-center xl:w-[60%] min-lg:w-[20%] overflow-hidden">
-          <img src="skills.png" className="h-auto w-auto rounded-2xl" data-aos="zoom-out" data-aos-delay="350"/>
+          <img src="skills.png" className="w-auto h-auto rounded-2xl" data-aos="zoom-out" data-aos-delay="350"/>
         </div>
 
         <div className="m-16">
@@ -77,7 +77,7 @@ export default function Skills() {
               SKILLS.map((skill, index) => (
                 <div className="cursor-pointer" key={index} data-aos="fade-up-left" data-aos-delay="200">
                   <div className="flex justify-between">
-                    <div className="mb-1 text-base font-medium dark:text-white flex items-center space-x-3" data-aos="fade-right" data-aos-delay="450">{skill.ico} <h3>{skill.title}</h3></div>
+                    <div className="flex items-center mb-1 space-x-3 text-base font-medium dark:text-white" data-aos="fade-right" data-aos-delay="450">{skill.ico} <h3>{skill.title}</h3></div>
                     <div className="mb-1 text-base font-medium dark:text-white">{skill.bar}</div>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">

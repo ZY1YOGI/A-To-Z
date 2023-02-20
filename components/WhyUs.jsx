@@ -5,9 +5,9 @@ function Accordion({ title, content, id }) {
   const toggleExpanded = () => setExpanded((current) => !current)
 
   return (
-    <div className="outline outline-2 outline-offset-4 outline-red-700 my-8 max-md:my-4 rounded-xl shadow-sm cursor-pointer bg-white dark:bg-gray-200" onClick={toggleExpanded}>
-      <div className="px-6 text-left items-center h-16 max-md:h-14 select-none flex justify-between flex-row">
-        <h5 className="flex-1 font-bold overflow-hidden" data-aos="fade-up" data-aos-delay="350"><span className="text-blue-400">{id}</span> {title}</h5>
+    <div className="my-8 bg-white shadow-sm cursor-pointer outline outline-2 outline-offset-4 outline-red-700 max-md:my-4 rounded-xl dark:bg-gray-200" onClick={toggleExpanded}>
+      <div className="flex flex-row items-center justify-between h-16 px-6 text-left select-none max-md:h-14">
+        <h5 className="flex-1 overflow-hidden font-bold" data-aos="fade-up" data-aos-delay="350"><span className="text-blue-400">{id}</span> {title}</h5>
         <div className="flex-none pl-2">{expanded ? <BsFillArrowUpCircleFill size={20} /> : <BsFillArrowDownCircleFill size={20} />}</div>
       </div>
       <div className={`px-6 pt-0 overflow-hidden transition-[max-height] duration-500 ease-in ${expanded ? "max-h-40" : "max-h-0"}`}>
@@ -22,7 +22,7 @@ function Accordion({ title, content, id }) {
 export default function WhyUs() {
   return (
     <section id="why-us" className="my-20 bg-white dark:bg-gray-800  border-x-[5px] border-red-600 dark:border-fuchsia-600">
-      <div className="mx-20 max-md:mx-3 flex justify-center items-center max-md:flex-col space-x-8 max-md:space-x-0 max-md:space-y-5">
+      <div className="flex items-center justify-center mx-20 space-x-8 max-md:mx-3 max-md:flex-col max-md:space-x-0 max-md:space-y-5">
 
         <div className="max-md:order-2">
           <div className="p-3">
@@ -39,7 +39,7 @@ export default function WhyUs() {
           </div>
         </div>
 
-        <div className="max-md:order-1 overflow-hidden">
+        <div className="overflow-hidden max-md:order-1">
           <img className="" src="why-us.png" data-aos="zoom-out" data-aos-delay="350" />
         </div>
       </div>
