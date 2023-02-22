@@ -8,7 +8,7 @@ export default function Document() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
       </Head>
 
-      <body className="bg-body-light dark:bg-body-dark">
+      <body className="w-screen overflow-x-hidden bg-body-light dark:bg-body-dark">
         <Main />
         <NextScript />
       </body>

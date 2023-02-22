@@ -30,7 +30,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="min-w-screen max-h-[8vh]">
+    <header className="w-screen max-h-[8vh] overflow-x-hidden">
       <nav className="navbar">
         <div className="flex items-center justify-center space-x-3" data-aos="zoom-out">
           <Image className="nav-logo" src={logo} alt="logo web site" width="auto" height="auto" priority />

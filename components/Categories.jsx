@@ -33,9 +33,9 @@ const CATEGORIES = [
 
 export default function Categories() {
   return (
-    <section id="categories" className="container mx-auto my-16 overflow-hidden" >
+    <section id="categories" className="container w-full mx-auto my-16 overflow-hidden" >
       <h1 className="mb-5 text-5xl text-center dark:text-white">Categories</h1>
-      <div className="grid grid-cols-4 gap-10 m-4 max-lg:grid-cols-2 max-sm:grid-cols-1">
+      <div className="grid grid-cols-4 gap-10 m-4 overflow-hidden max-lg:grid-cols-2 max-sm:grid-cols-1">
 
         {
           CATEGORIES.map((category, index) => (

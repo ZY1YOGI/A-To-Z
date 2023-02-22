@@ -26,7 +26,7 @@ export default function Services() {
           <div className="p-5 border shadow-md bg-gray-50 dark:bg-gray-800 shadow-fuchsia-700 rounded-xl border-fuchsia-600" data-aos="fade-right" data-aos-delay="400">
             <MdDevices size={28} />
             <h1 className="text-xl dark:text-white">POS Hardware</h1>
-            <p className="text-gray-700 dark:text-gray-300">Selling all kinds of POS devices (printers, scanners, barcode printer, PC, All one)</p>
+            <p className="text-gray-700 dark:text-gray-300">Selling all kinds of POS devices (printers, scanners, printer, PC, all one..)</p>
           </div>
         </div>
 
