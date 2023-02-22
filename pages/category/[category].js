@@ -3,16 +3,12 @@ import Contact from "@/components/Contact";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 
-export async function getServerSideProps(context) {
-
-
-  const response = await fetch("https://2796-41-43-95-76.eu.ngrok.io/api/products")
-  const PRODUCTS = await response.json()
+export async function getServerSideProps(context) {  
+  
   return {
     props: {
       category: {
         name: context.query["category"],
-        products:PRODUCTS.products
       },
     },
   };
@@ -37,7 +33,7 @@ export default function ({ category }) {
           <p className="text-gray-700 capitalize dark:text-gray-300" data-aos="fade-down">We always care about our services, whether it is software, hardware, hardware or software maintenance.</p>
         </div>
 
-        <div className="mt-8 grid grid-cols-4 gap-10 max-lg:gap-5 max-sm:grid-cols-1 max-lg:grid-cols-3 max-lg:px-[3%] m-5">
+        {/* <div className="mt-8 grid grid-cols-4 gap-10 max-lg:gap-5 max-sm:grid-cols-1 max-lg:grid-cols-3 max-lg:px-[3%] m-5">
 
           {
             category.products.map((product, index) => (
@@ -55,7 +51,7 @@ export default function ({ category }) {
             ))
           }
 
-        </div>
+        </div> */}
       </section>
 
       <Contact />
