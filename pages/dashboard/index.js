@@ -8,7 +8,7 @@ export default function index() {
     e.preventDefault();
 
     const body = { name, description };
-    const data = await fetch('/api/category', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)});
+    const data = await fetch('', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)});
     const dataJson = await data.json();
     console.log(dataJson);
 

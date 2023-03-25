@@ -4,6 +4,9 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 
 export async function getServerSideProps(context) {  
+  const data = await fetch(`${process.env.BASE_API}/products`);
+  const categories = await data.json();
+  
   
   return {
     props: {

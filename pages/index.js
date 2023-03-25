@@ -11,8 +11,18 @@ import Categories from "@/components/Categories"
 
 
 
+export async function getServerSideProps(context) {
+  
+  return {
+    props: {
+      categories: []
+    },
+  };
+}
 
-export default function Home() {
+
+
+export default function Home({ categories }) {
   return (
     <>
       <Head>
@@ -24,7 +34,7 @@ export default function Home() {
       <Services />
       <About />
       <WhyUs />
-      <Categories />
+      <Categories categories={categories}/>
       <Skills />
       <Contact />
     </>
